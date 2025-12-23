@@ -1,4 +1,4 @@
-function Chai({username, btntext="default text"}) {
+function Chai({username, btntext}) {
     console.log(username);
     return (
         <div className="md:max-w-sm w-full p-6 rounded-xl shadow-xl bg-black border border-zinc-800 hover:border-white transition-all duration-300 hover:transform hover:scale-105 group">
@@ -8,7 +8,7 @@ function Chai({username, btntext="default text"}) {
             alt="Featured content"
             className="object-cover object-center w-full h-48 transition-transform duration-300 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
 
         <div className="mb-4">
@@ -27,7 +27,7 @@ function Chai({username, btntext="default text"}) {
 
         <div className="flex items-center justify-between">
           <button className="px-4 py-2 bg-white hover:bg-gray-200 text-black text-sm rounded-lg transition-colors duration-200">
-            {btntext}
+            {}
           </button>
           <div className="flex items-center space-x-1 text-xs text-gray-500">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
